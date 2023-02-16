@@ -1,24 +1,18 @@
-import java.util.*
-
 
 fun main() {
 
-    val scanner = Scanner(System.`in`).useLocale(Locale.US)
-    val x = scanner.nextDouble()
-    val y = scanner.nextDouble()
+    val a = (readLine()!!.split(" ").drop(1).map { it.toInt() })
+    val b = (readLine()!!.split(" ").drop(1).map { it.toInt() })
+    val c = (readLine()!!.split(" ").drop(1).map { it.toInt() })
 
-    val answer = if (
 
-        y<x &&
-        x<0 &&
-        x * x + y * y < 1
-        ||
-        y>=x &&
-        x * x + y * y < 1
-         )
-        "YES"
-    else "NO"
 
+
+
+    val answer = ""
     println(answer)
 
 }
+
+
+fun runTask(a: Int, b: Int): Int = a + b
